@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tutorial Modal pada Navbar</title>
+	<!-- Bagian css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/informatika.css">
+	<script src="assets/js/jquery-1.10.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">
+			Dunia Informatika</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li class="clr1 active"><a href="index.html">Home</a></li>
+				<li class="clr2"><a href="#signin" data-toggle="modal" data-target="#theModal">Bootstrap</a></li>  
+				
+				<li class="clr3"><a href="">PHP</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</br></br></br></br>
+</div>
+
+<!-- Bagian modal -->
+<div class="container">
+  <div class="modal" id="theModal" role="dialog">
+   <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      <h4 class="modal-title">Judul Modal</h4>
+     </div>
+     <div class="modal-body">
+      Informasi dari modal body
+     </div>
+     <div class="modal-footer">
+      <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+     </div>
+    </div>
+   </div>
+  </div>
+</div>
+<!-- Akhir dari modal -->
+</body>
+</html>
